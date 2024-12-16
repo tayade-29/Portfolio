@@ -1,7 +1,8 @@
 const svgToDataUri = require("mini-svg-data-uri");
+const aspectRatio = require("@tailwindcss/aspect-ratio");
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -64,7 +65,7 @@ export default {
   },
 
   plugins: [
-    require("@tailwindcss/aspect-ratio"),
+    aspectRatio,
     addVariablesForColors,
     backgroundSVG
   ],
