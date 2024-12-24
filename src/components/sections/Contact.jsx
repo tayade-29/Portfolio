@@ -131,13 +131,13 @@ const contactData = [
         title: "LinkedIn",
         icon: <FaLinkedin size={24} />,
         info: "@pranjaltayade",
-        path: "https://www.linkedin.com/in/johnclaytonblanc"
+        path: "https://www.linkedin.com/in/pranjal-tayade-832a91239/"
     },
     {
         title: "GitHub",
         icon: <FaMedium size={24} />,
         info: "@jclaytonblanc",
-        path: "https://medium.com/@jclaytonblanc"
+        path: "https://github.com/tayade-29"
     },
 ];
 
