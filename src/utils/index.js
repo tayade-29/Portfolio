@@ -13,7 +13,7 @@ import a5 from "../assets/images/a5.webp";
 export const headlines = [
     "Hi, I'm Pranjal Tayade.",
     "I'm a web Developer",
-    "Developer skilled in React, Tailwind CSS, JavaScript, and modern web technologies. I also have experience with backend technologies, enabling me to build full-stack applications. Passionate about creating user-friendly, and high-performance web solutions."
+    "A web Developer passionate about crafting beautiful, responsive, and efficient web applications using React, Tailwind CSS, and modern technologies. With a knack for problem-solving and experience in backend development, I bring ideas to life with clean code and seamless functionality. Let’s create something amazing!"
 
 ];
 

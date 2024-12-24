@@ -42,7 +42,7 @@ const About = () => {
                     animate={control}
                     className="flex-1 text-base">
                     <p className="pb-3">
-                    Hi, I’m Pranjal Tayade, a Frontend Developer skilled in React, Tailwind CSS, JavaScript, and modern web technologies. I also have experience with backend technologies, enabling me to build full-stack applications. Passionate about creating responsive, user-friendly, and high-performance web solutions, I’m always eager to take on new challenges and innovate through technology.
+                    A Web Developer skilled in React, Tailwind CSS, JavaScript, and modern web technologies. I also have experience with backend technologies, enabling me to build full-stack applications. Passionate about creating responsive, user-friendly, and high-performance web solutions, I’m always eager to take on new challenges and innovate through technology.
                     </p>
 
 {/*                     <div className="pb-3">
