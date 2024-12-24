@@ -8,6 +8,9 @@ import a1 from "../assets/images/a1.webp";
 import a2 from "../assets/images/a2.webp";
 import a4 from "../assets/images/a4.webp";
 import a5 from "../assets/images/a5.webp";
+import cast1 from "../assets/images/cast1.png"
+import task from "../assets/images/task.png"
+import pin from "../assets/images/pin.jpg"
 
 
 export const headlines = [
@@ -35,7 +38,7 @@ export const projects = [
     },
     {
         title: 'Pinterest Clone',
-        image: ora,
+        image: pin,
         linkOnline: '',
         linkGithub: null,
         description: 'Social Media Website Built a social media platform using React.js for the front end and MongoDB for data management. Integrated features like user authentication, profile creation, and real-time update using React components and Express backend services',
@@ -43,18 +46,18 @@ export const projects = [
     },
     {
         title: 'Job Portal',
-        image: chat,
+        image: cast1,
         linkGithub: '',
         linkOnline: '',
         description: 'A web application UI that provides job landing website',
         techStack: ['React', 'Tailwind CSS', 'Firebase', 'Replicate', 'Llama2']
     },
     {
-        title: 'Task Tracer',
-        image: tracer,
+        title: 'Task Manager',
+        image: task,
         linkGithub: '',
         linkOnline: null,
-        description: 'History Tracer is A desktop application that reads history data from different web browsers and displays it in a table.',
+        description: 'Task Manager is a web based application that helps us to organise task, status of task, in this React is used as frontend and Redux is used as state management tool ',
         techStack: ['Java Swing', 'SQLite JDBC']
     },
 ];
