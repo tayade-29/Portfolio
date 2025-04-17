@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { CustomButton } from "../buttons/CustomButton";
 import { FaLinkedin } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
+import { FaGit } from "react-icons/fa6";
 import { sendEmail } from "../../services/email";
 import { useState, useEffect } from "react";
 import SectionHeader from "../ui/SectionHeader";
@@ -135,8 +135,8 @@ const contactData = [
     },
     {
         title: "GitHub",
-        icon: <FaMedium size={24} />,
-        info: "@jclaytonblanc",
+        icon: <FaGit size={24} />,
+        info: "tayade-29",
         path: "https://github.com/tayade-29"
     },
 ];

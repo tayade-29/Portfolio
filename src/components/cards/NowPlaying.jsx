@@ -6,6 +6,7 @@ import { HiOutlineStatusOffline } from 'react-icons/hi';
 import albumCover from '../../assets/images/albumCover.png';
 import soundbar from '../../assets/images/soundbar.gif';
 
+
 const NowPlaying = () => {
     const [nowPlaying, setNowPlaying] = useState(null);
 

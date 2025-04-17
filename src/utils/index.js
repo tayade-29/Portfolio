@@ -1,3 +1,9 @@
+
+//import cast from "../assets/images/cast.png";
+import p1 from "../assets/images/Ai.png";
+import p2 from "../assets/images/2.png";
+import p3 from "../assets/images/npd.png";
+import p4 from "../assets/images/zeropad.png";
 import ora from "../assets/images/ora.png";
 import chat from "../assets/images/chat.png";
 import cast from "../assets/images/cast.png";
@@ -11,6 +17,8 @@ import a5 from "../assets/images/a5.webp";
 import cast1 from "../assets/images/cast1.png"
 import task from "../assets/images/task.png"
 import pin from "../assets/images/pin.jpg"
+
+
 
 
 export const headlines = [
@@ -29,35 +37,35 @@ export const fixedNavItems = [
 
 export const projects = [
     {
-        title: 'Crafted Elegance',
-        image: cast,
+        title: 'Zeropad',
+        image: p4,
         linkGithub: '',
-        linkOnline: '',
-        description: 'Crafted Elegance (Smart India Hackathon) Led the design and development of an e-commerce platform called "Crafted Elegance" for artisans. Utilized Figma for UI/UX design and developed the front end using HTML, CSS, and JavaScript.',
-        techStack: ['React', 'Tailwind CSS', 'Firebase', 'Weather API']
+        linkOnline: 'https://zeropad.in/',
+        description: 'Developed during my internship at Rytnow Pvt. Ltd., ZeroPad is a real-time web app to monitor sanitary waste incinerators. I led the complete development cycle—research, UI/UX design, implementation, testing, and deployment. ',
+        techStack: ['React', 'Tailwind CSS', 'SQL']
     },
     {
-        title: 'Pinterest Clone',
-        image: pin,
+        title: 'BlogApplication',
+        image: p1,
         linkOnline: '',
-        linkGithub: null,
-        description: 'Social Media Website Built a social media platform using React.js for the front end and MongoDB for data management. Integrated features like user authentication, profile creation, and real-time update using React components and Express backend services',
+        linkGithub: 'https://github.com/tayade-29/BlogApplication',
+        description: 'A full-stack blogging platform developed independently with user authentication, profile management, and dynamic routing. Utilized Redux Toolkit and RTK Query for efficient API state handling. Backend was built using Node.js and Prisma ORM.',
         techStack: ['JavaScript', 'Express', 'Mongoose']
     },
     {
-        title: 'Job Portal',
-        image: cast1,
-        linkGithub: '',
+        title: 'AI Image Generator',
+        image:p2 ,
+        linkGithub: 'https://github.com/tayade-29/AiImagegeneration',
         linkOnline: '',
-        description: 'A web application UI that provides job landing website',
+        description: 'Created a DALL·E-inspired AI-powered image generator that converts user prompts into visuals. Developed with React.js for the frontend and Node.js for backend processing. Integrated AI APIs for real-time',
         techStack: ['React', 'Tailwind CSS', 'Firebase', 'Replicate', 'Llama2']
     },
     {
-        title: 'Task Manager',
-        image: task,
+        title: 'NPD',
+        image:p3 ,
         linkGithub: '',
         linkOnline: null,
-        description: 'Task Manager is a web based application that helps us to organise task, status of task, in this React is used as frontend and Redux is used as state management tool ',
+        description: 'A dynamic dashboard-based application that tracks each stage in the product development lifecycle. Used React and Redux for UI and state management, and integrated REST APIs for real-time data updates. ',
         techStack: ['Java Swing', 'SQLite JDBC']
     },
 ];
@@ -72,6 +80,9 @@ export const skillsWork = [
     'Python',
     'VsCode',
     'GitHub',
+     'Redux',
+     'API Integration',
+     'Data Stuctures'
 ];
 
 
@@ -81,5 +92,5 @@ export const metadata = {
     title: "Pranjal Tayade",
     description: "This portfolio is a collection of my work that showcases my skills and creativity.",
     imageURL: "",
-    pageUrl: "https://www.johnclaytonblanc.com"
+    pageUrl: "https://pranjalportfolio-chi.vercel.app/"
 };

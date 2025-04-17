@@ -12,6 +12,7 @@ import transition from "../../assets/images/transition.png";
 import zoomer from "../../assets/images/zoomer.png";
 import ccpap from "../../assets/images/ccpap.png";
 
+
 const About = () => {
     const control = useAnimation();
     const [ref, inView] = useInView();
