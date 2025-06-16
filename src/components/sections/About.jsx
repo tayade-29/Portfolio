@@ -12,7 +12,6 @@ import transition from "../../assets/images/transition.png";
 import zoomer from "../../assets/images/zoomer.png";
 import ccpap from "../../assets/images/ccpap.png";
 
-
 const About = () => {
     const control = useAnimation();
     const [ref, inView] = useInView();
@@ -33,64 +32,34 @@ const About = () => {
     }, [control, inView]);
 
     return (
-        <section className="mt-5 max-w-4xl mx-auto md:px-8" id="about">
+        <section className="mt-5 max-w-4xl mx-auto md:px-8 px-4" id="about">
             <SectionHeader title={"About."} subtitle={"Skills & Journey"} />
 
-            <div className="text-secondary-text md:flex flex-row gap-16 px-4 md:px-0" ref={ref}>
+            <div className="text-secondary-text flex flex-col md:flex-row gap-8 md:gap-16" ref={ref}>
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     animate={control}
-                    className="flex-1 text-base">
+                    className="flex-1 text-base md:text-left"
+                >
                     <p className="pb-3">
-                    A Web Developer skilled in React, Tailwind CSS, JavaScript, and modern web technologies. I also have experience with backend technologies, enabling me to build full-stack applications. Passionate about creating responsive, user-friendly, and high-performance web solutions, I’m always eager to take on new challenges and innovate through technology.
+                        I’m a passionate and curious Full Stack Developer with hands-on experience building responsive, user-centric web applications using React.js, Node.js, and MongoDB. I recently completed a Software Development internship, where I contributed to live projects like Zeropad, gaining practical exposure to frontend architecture, Redux state management, and performance optimization techniques like lazy loading and code splitting.
                     </p>
 
-{/*                     <div className="pb-3">
-                        Currently, I work passively for{' '}
-                        <Tooltip
-                            name={'Transition Digitale'}
-                            path={'https://transitiondigitale.tech/'}
-                            image={transition}
-                        />{' '}
-
-                        and contribute to the
-                        <span className="text-secondary"> Predika </span>
-                        project at{' '}
-
-                        <Tooltip
-                            name={'Zoomer Digital'}
-                            path={'https://zoomerdigital.tech/'}
-                            image={zoomer}
-                        />
-                    </div>
-
                     <div className="pb-3">
-                        Outside of the world of code, I'm the guy who enjoys playing football and piano. Each Sunday morning, you can find me at{' '}
-                        <Tooltip
-                            name={'Calvary Chapel Port-au-Prince'}
-                            path={'https://www.calvarypap.org/'}
-                            image={ccpap}
-                        />
-                        , expressing gratitude to God.
-                    </div> */}
-
-                    <div className="pb-3">
-                        I'm looking for new opportunities where I can merge my love for code with my love for learning to solve challenging problems. If you have an opening that might be a good fit, let's connect and explore the possibilities!
-                    </div>
+                        I'm looking for new opportunities where I can merge my love for code with my love for learning to solve challenging problems.
+                        </div>
                 </motion.div>
 
-                <div className="flex-1 pt-4 md:pt-0">
+                <div className="flex-1 pt-0 md:pt-0">
                     <StackSkills
                         title={"Programming & Tools"}
                         list={skillsWork}
                         icon={<FaCode color="#6366f1" />} />
-
-                    
                 </div>
             </div>
         </section>
     )
 }
 
-export default About
+export default About;

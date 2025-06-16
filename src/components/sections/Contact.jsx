@@ -9,7 +9,7 @@ import SectionHeader from "../ui/SectionHeader";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import Toast from "../ui/Toast";
-import contactImage from "../../assets/images/contactImage.png"//Add your image here
+import contactImage from "../../assets/images/contactImage.png";
 
 const Contact = () => {
     const [alert, setAlert] = useState('');
@@ -66,7 +66,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="mt-5 max-w-6xl mx-auto md:px-8 pb-28" id="contact">
+        <section className="mt-5 max-w-6xl mx-auto px-4 md:px-8 pb-20 md:pb-28" id="contact">
             <SectionHeader title={"Contact."} subtitle={"Connect with Me"} />
 
             <div className="flex flex-col md:flex-row items-stretch justify-center" ref={ref}>
@@ -74,26 +74,27 @@ const Contact = () => {
                     variants={containerVariants}
                     initial="hidden"
                     animate={control}
-                    className="flex-1 grid md:grid-cols-2 px-5 md:px-0 gap-8">
+                    className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+                >
                     {/* Contact Information */}
-                    <div className="pr-6">
-                        <p className="mt-3 mb-12 text-base text-secondary-text text-center md:text-left">
+                    <div className="md:pr-6">
+                        <p className="mt-3 mb-8 md:mb-12 text-base text-secondary-text text-center md:text-left">
                             I&apos;d be happy to connect! Feel free to reach out for project inquiries, collaboration opportunities, or any other questions you may have.
                         </p>
 
-                        <ul className="mb-6 md:mb-0">
+                        <ul className="mb-6 md:mb-0 space-y-4 md:space-y-6">
                             {contactData.map((item, idx) =>
-                                <Link to={item.path} key={idx}>
-                                    <li className="flex items-center mb-6">
-                                        <div className="flex h-10 w-10 items-center justify-center rounded bg-secondary text-primary-text">
+                                <Link to={item.path} key={idx} target="_blank" rel="noopener noreferrer">
+                                    <li className="flex items-center">
+                                        <div className="flex h-10 w-10 items-center justify-center rounded bg-secondary text-primary-text flex-shrink-0">
                                             {item.icon}
                                         </div>
 
-                                        <div className="ml-4">
-                                            <h3 className="mb-1 text-lg font-medium leading-6 text-primary-text">
+                                        <div className="ml-4 overflow-hidden">
+                                            <h3 className="mb-1 text-lg font-medium leading-6 text-primary-text truncate">
                                                 {item.title}
                                             </h3>
-                                            <p className="text-secondary-text">
+                                            <p className="text-secondary-text truncate">
                                                 {item.info}
                                             </p>
                                         </div>
@@ -101,17 +102,17 @@ const Contact = () => {
                                 </Link>
                             )}
                         </ul>
-                        <div className="flex items-center">
+                        <div className="flex items-center mt-4">
                             <Toast message={alert} />
                         </div>
                     </div>
 
-                    {/* Right-Side Image */}
+                    {/* Right-Side Image - Hidden on mobile */}
                     <div className="hidden md:block">
                         <img
                             src={contactImage}
                             alt="Contact Illustration"
-                            className="rounded-lg w-full max-w-md object-cover mx-auto"
+                            className="rounded-lg w-full h-full max-h-[400px] object-cover"
                         />
                     </div>
                 </motion.div>

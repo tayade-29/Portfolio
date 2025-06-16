@@ -4,10 +4,10 @@ import SectionHeader from "../ui/SectionHeader";
 
 const Projects = () => {
     return (
-        <section className="mt-5 max-w-4xl mx-auto md:px-8" id="projects">
+        <section className="mt-5 max-w-4xl mx-auto px-4 md:px-8" id="projects">
             <SectionHeader title={"Projects."} subtitle={"Most recent works"}/>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-0 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
                 {projects.map((project, idx) => (
                     <ProjectCard project={project} key={idx} />
                 ))}
@@ -16,4 +16,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Projects;
